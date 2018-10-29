@@ -1,7 +1,6 @@
 jabaum
 cocsce-l1d39-01
-10-28-2018 - 11:57:47 PM
-
+10-29-2018 - 07:56:55 AM
 #!/bin/bash
 ############################################
 #### Justin Baum                        ####
@@ -11,36 +10,27 @@ cocsce-l1d39-01
 
 # Our absolute positioning
 DIRECTORY="/usr/local/tmp/csce215/election2008"
-EXTRACTDATADIR="/acct/jabaum/assignment2"
+EXTRACTDATADIR="/acct/jabaum/CSCE215/assignment2"
 
 # Part 1.1
-echo -e  -e "Listing all .csv files."
-echo -e  "###########################################\n"
-find $DIRECTORY -name "*.csv"
+find $DIRECTORY -name "*.csv" -print
 
 # Part 1.2
-echo -e  "\nListing all .csv files in the sub directory Jul/"
-echo -e  "###########################################\n"
-find $DIRECTORY/Jul -name "*.csv"
+find $DIRECTORY/Jul -name "*.csv" -print
 
 # Part 1.3
-echo -e  "\nListing all .csv files for the first 9 days of August"
-echo -e  "###########################################\n"
-find $DIRECTORY/Aug -name "Aug0?.csv"
+find $DIRECTORY/Aug -name "Aug0?.csv" -print 
 
 # Part 1.4
-echo -e  "\nListing all .csv files for the first 9 days of August and July"
-echo -e  "###########################################\n"
-find $DIRECTORY/Jul $DIRECTORY/Aug -name "*0?.csv"
+find $DIRECTORY/Jul $DIRECTORY/Aug -name "*0?.csv" -print
 
 # Part 1.5
-echo -e  "\nListing all .csv files that are dated before August 10th"
-echo -e  "###########################################\n"
-find $DIRECTORY/Aug -name "Aug0?.csv"
+find $DIRECTORY -name "Jan*.csv" -o -name "Feb*.csv" -o -name "Mar*.csv" -o -name "Apr*.csv" -o -name "May*.csv" -o -name "Jun*.csv" -o -name "Jul*.csv" -o -name "Aug0?.csv"
 
 # Part 2
-# Get headers from any file
-head -n 2 $DIRECTORY/Aug/Aug01.csv > $EXTRACTDATADIR/polls.csv
+
+# Clean the file first
+echo "" > $EXTRACTDATADIR/polls.csv
 
 for file in $(find $DIRECTORY -name "*.csv")
 do
@@ -50,14 +40,3 @@ done
 
 # extractdata file
 # head -n -1 $1 | tail -n 51
-
-
-# Part 2 no outside file
-
-head -n 3 $DIRECTORY/Aug/Aug01.csv > $EXTRACTDATADIR/polls2.csv
-
-for file in $(find $DIRECTORY -name "*.csv")
-do
-    head -n -1 $file | tail -n 51 >> $EXTRACTDATADIR/polls2.csv
-done
-
