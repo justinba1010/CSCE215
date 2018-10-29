@@ -1,0 +1,35 @@
+jabaum
+cocsce-l1d39-04
+10-22-2018 - 10:01:53 AM
+Justin Baum
+jabaum@email.sc.edu
+Computer Science and Mathematics
+
+Ubuntu 11.04 was my first Linux Distro.
+I'm using VIM because I am in the lab, I prefer VSCode and Atom.
+Script started on Mon 22 Oct 2018 10:00:46 AM EDT
+whoami
+printf "$USER\n"
+echo $USER
+whoami
+echo $HOSTNAME
+echo $(date +"%m-%d-%Y")
+echo $(date +"%r")
+exit]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ whoami
+jabaum
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ printf "$USER\n"
+jabaum
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ echo $USER
+jabaum
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ whoami
+jabaum
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ echo $HOSTNAME
+cocsce-l1d39-04
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ echo $(date +"%m-%d-%Y")
+10-22-2018
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ echo $(date +"%r")
+10:00:46 AM
+]0;jabaum@cocsce-l1d39-04: ~/Desktopjabaum@cocsce-l1d39-04:~/Desktop$ exit
+exit
+
+Script done on Mon 22 Oct 2018 10:00:47 AM EDT

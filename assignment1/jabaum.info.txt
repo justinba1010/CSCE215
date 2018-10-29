@@ -1,0 +1,6 @@
+Justin Baum
+jabaum@email.sc.edu
+Computer Science and Mathematics
+
+Ubuntu 11.04 was my first Linux Distro.
+I'm using VIM because I am in the lab, I prefer VSCode and Atom.
