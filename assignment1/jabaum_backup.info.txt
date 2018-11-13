@@ -1,0 +1,16 @@
+Justin Baum
+jabaum@email.sc.edu
+2016253040
+Computer Science and Mathematics
+2nd Grade 	Visual Basic
+6th Grade 	PHP, HTML, LAMP, CSS
+7th Grade 	Python
+8th Grade 	Java
+10th Grade 	C, C++, Bash
+12th Grade 	Elixir
+Freshman	Erlang 
+
+I won 3rd at ICPC last year, but of course I am not invited this year.
+
+Ubuntu 11.04 was my first Linux Distro.
+I'm using VIM because I am in the lab, I prefer VSCode and Atom.

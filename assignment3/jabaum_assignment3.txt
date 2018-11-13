@@ -1,0 +1,35 @@
+jabaum
+cocsce-l1d39-01
+11-05-2018 - 10:27:10 AM
+
+
+CSCE215=/usr/local/tmp/csce215
+POLLS=/acct/jabaum/CSCE215/polls.csv
+ASSIGNMENT3=/acct/jabaum/CSCE215/assignment3
+
+# Part 1: Question 1
+cut -d ',' -f 14 $POLLS | sort | uniq
+
+# Part 1: Question 2
+cut -d ',' -f 14 $POLLS | sort | uniq | wc -l
+
+
+# Part 2: Question 1
+tr A-Z a-z < $CSCE215/Words
+
+# Part 2: Question 2
+sed "n;d;" $CSCE215/Words > $ASSIGNMENT3/words
+
+# Part 2: Question 3
+# This regex is a little hacky, but it looks like there is some whitespace that was making this 5,
+grep "^.\{6\}.\{1\}$" $ASSIGNMENT3/words | wc -l
+
+# Part 2: Question 4
+# Again whitespace is messing with this
+grep "^[bdBD].\{4\}$" $ASSIGNMENT3/words | wc -l
+
+# Part 2: Question 5
+# I couldn't tell if you meant consonants or non-vowels
+grep "^.*[qwrtypsdfghjklzxcvbnm]\{6\}.*$" $ASSIGNMENT3/words | wc -l # If stricly consonants
+grep "^.*[^aeiou]\{6\}.*$" $ASSIGNMENT3/words | wc -l # If strictly non-vowel
+
