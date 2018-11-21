@@ -10,3 +10,5 @@ findName.o: findName.cpp
 clean:
 	rm -f findName *.o
 
+backup:
+	tar -cvf jabaum.findname.tar *.cpp Makefile README findName.sh

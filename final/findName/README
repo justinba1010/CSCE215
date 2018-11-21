@@ -1,0 +1,23 @@
+# Final Project for CSCE215
+
+Justin Baum
+21 November 2018
+
+## Overview
+
+This program will allow you to do a username based lookup of any user in CSCE215 for the Fall semester of 2018.
+
+## Usage
+
+Use the steps provided in the project specifications to run this.
+
+```
+$ tar xvf $USER.findname.tar
+$ make
+$ ./findName someuserid
+```
+
+## Notes
+
+This program will only have 3 results. Either it finds a user, and outputs their full name. It does not find that user and displays an error message, or an illegal number of parameters are passed and an error message is generated.
+This README is written in Markdown, for better viewing please use a Markdown viewer.
